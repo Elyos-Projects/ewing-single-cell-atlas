@@ -1,0 +1,35 @@
+{
+  "id": "ewing-atlas-anno-003",
+  "title": "Per-assertion annotation-provenance + confidence; CI completeness check",
+  "project": "ewing-single-cell-atlas",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "provenance",
+    "annotation"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "M2 provenance enforcement. CI must block any release carrying an unsourced label. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Implement per-assertion annotation provenance and confidence capture plus a CI completeness check that blocks unsourced labels.",
+  "acceptanceCriteria": [
+    "Each annotation assertion records source citation, method, and confidence per the AnnotationAssertion schema.",
+    "CI completeness check fails the build if any label lacks a source citation.",
+    "Commit signed off per DCO."
+  ],
+  "resources": [
+    "/output/schemas/AnnotationAssertion.schema.json"
+  ],
+  "output": "A pull request adding annotation-provenance capture and the CI completeness gate.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "ewing-atlas-verify-001",
+  "title": "Discover + triage >=15 candidate Ewing scRNA-seq sources",
+  "project": "ewing-single-cell-atlas",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "data-discovery"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "M0 source inventory — delivers researcher value with no partner required. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Discover and triage at least 15 candidate Ewing sarcoma scRNA-seq sources into draft SourceRecords for downstream license/access verification.",
+  "acceptanceCriteria": [
+    "At least 15 candidate Ewing scRNA-seq sources identified, each captured as a draft SourceRecord.",
+    "Each candidate notes apparent access tier and retrieval URL for the verify-002 gate.",
+    "Triage output is the input list for the license/access-verification hard gate."
+  ],
+  "resources": [
+    "GEO, ArrayExpress, Single Cell Portal, CELLxGENE Discover, EBI BioStudies"
+  ],
+  "output": "/output/sources/candidates.jsonl (>=15 draft SourceRecords)",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

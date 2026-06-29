@@ -1,0 +1,35 @@
+{
+  "id": "ewing-atlas-integ-001",
+  "title": "Integrate >=3 datasets (deterministic batch correction)",
+  "project": "ewing-single-cell-atlas",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "integration",
+    "batch-correction"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "M3 cross-dataset reference atlas via deterministic, reproducible integration. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Integrate at least 3 standardized + annotated datasets using deterministic batch correction, recording method, params, and tool versions.",
+  "acceptanceCriteria": [
+    "At least 3 standardized+annotated datasets integrated; method + params + tool versions recorded.",
+    "Pre-/post-integration shown; batch-effect handling documented.",
+    "Reproducible by an independent runner; BR + DR sign-off."
+  ],
+  "resources": [
+    "/output/data/pilot/annotated.h5ad"
+  ],
+  "output": "/output/atlas/integrated.h5ad (>=3 datasets, deterministic integration)",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

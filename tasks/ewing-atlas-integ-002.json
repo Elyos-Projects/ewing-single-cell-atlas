@@ -1,0 +1,35 @@
+{
+  "id": "ewing-atlas-integ-002",
+  "title": "Integration report + explicit limitations statement",
+  "project": "ewing-single-cell-atlas",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "integration",
+    "documentation"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "M3 honest reporting. The limitations statement must warn against reading integration artifacts as biology. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Author the integration report with an explicit limitations statement accompanying the integrated atlas.",
+  "acceptanceCriteria": [
+    "Report documents integration method, params, and tool versions and shows pre-/post-integration results.",
+    "Limitations statement explicitly warns against reading integration artifacts as biology.",
+    "BR + DR sign-off recorded."
+  ],
+  "resources": [
+    "/output/atlas/integrated.h5ad"
+  ],
+  "output": "/output/atlas/integration-report.md (incl. limitations statement)",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

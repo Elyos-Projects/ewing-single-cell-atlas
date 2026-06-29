@@ -1,0 +1,35 @@
+{
+  "id": "ewing-atlas-infra-003",
+  "title": "Write refusal/guardrail + compliance doc (cancer guardrails, exclude-list)",
+  "project": "ewing-single-cell-atlas",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "compliance",
+    "ethics"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "M0 foundation. Codifies the cancer-data guardrails and exclude-list that bound all downstream curation. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Author the refusal/guardrail and compliance document covering the open-access-only rule, the exclude-list, the 'not medical advice' stance, the provenance mandate, and the escalation path.",
+  "acceptanceCriteria": [
+    "Documents the open-access-only rule and the exclude-list (controlled-access / identifiable / non-commercial sources).",
+    "States 'not medical advice', the provenance mandate, and the 'when in doubt, stop and surface' escalation path.",
+    "Referenced from README/CONTRIBUTING as the binding compliance policy."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md (refusal guardrails)"
+  ],
+  "output": "/output/COMPLIANCE.md (refusal/guardrail + exclude-list policy)",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

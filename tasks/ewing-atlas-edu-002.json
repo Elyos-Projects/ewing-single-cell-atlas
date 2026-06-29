@@ -1,0 +1,34 @@
+{
+  "id": "ewing-atlas-edu-002",
+  "title": "Dual expert review + comprehension test ('not medical advice')",
+  "project": "ewing-single-cell-atlas",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "patient-education"
+  ],
+  "riskTier": "high",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "M5 CONDITIONAL gate. Both a credentialed oncologist (ONC) and a patient-advocate (ADV) must sign off, with veto = block, plus an advocate comprehension test, before the explainer can merge. Patient-facing oncology content is high risk. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Run dual expert review (oncologist + patient-advocate) and an advocate comprehension test of the explainer, gating merge on both sign-offs.",
+  "acceptanceCriteria": [
+    "Comprehension-tested with an advocate panel; 0 instances read as medical advice.",
+    "Both oncologist and patient-advocate sign-off recorded before merge (veto = block).",
+    "If either expert vetoes or the comprehension test fails, the explainer is blocked from merge."
+  ],
+  "resources": [
+    "/output/education/ewing-single-cell-explainer.md"
+  ],
+  "output": "/output/education/expert-review-and-comprehension-test.md (ONC + ADV sign-off)",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

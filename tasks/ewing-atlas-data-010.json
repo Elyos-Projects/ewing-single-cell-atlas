@@ -1,0 +1,34 @@
+{
+  "id": "ewing-atlas-data-010",
+  "title": "Scale standardization to all verified-open datasets",
+  "project": "ewing-single-cell-atlas",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "data-standards"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Backlog (after pilot proven). Apply the proven standardization pipeline to all verified-open datasets. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Scale the validated standardization pipeline to standardize all verified-open datasets into CELLxGENE-schema outputs with provenance.",
+  "acceptanceCriteria": [
+    "Every verified-open dataset standardized to a cellxgene-schema-valid output with QC + provenance.",
+    "Only verified-open sources processed; no controlled/identifiable data present.",
+    "Each output reproducible by an independent runner."
+  ],
+  "resources": [
+    "/output/sources/verified-open.jsonl"
+  ],
+  "output": "/output/data/all/ (standardized verified-open datasets + provenance)",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "ewing-atlas-ops-001",
+  "title": "Quarterly refresh runbook + new-dataset intake process",
+  "project": "ewing-single-cell-atlas",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "sustainability",
+    "operations"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "M6 sustainability. A runbook for quarterly refresh and gated intake of new open datasets through the same pipeline. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Author the quarterly refresh runbook and the gated new-dataset intake process.",
+  "acceptanceCriteria": [
+    "Runbook covers gated intake of new open datasets via the same pipeline (verify -> standardize -> annotate).",
+    "Defines refresh cadence and responsibilities.",
+    "Maintainer-reviewed."
+  ],
+  "resources": [
+    "/output/COMPLIANCE.md"
+  ],
+  "output": "/output/ops/refresh-runbook.md (+ intake process)",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

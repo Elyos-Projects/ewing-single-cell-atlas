@@ -1,0 +1,34 @@
+{
+  "id": "ewing-atlas-data-001",
+  "title": "Acquire + checksum pilot verified-open dataset(s); record provenance",
+  "project": "ewing-single-cell-atlas",
+  "type": "data",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "provenance"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "M1 pilot acquisition. Only verified-open sources may be fetched; provenance and checksums are recorded at fetch time. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Acquire and checksum the pilot verified-open dataset(s) and record complete fetch provenance.",
+  "acceptanceCriteria": [
+    "Only verified-open sources fetched; SHA-256 recorded; no controlled/identifiable data present.",
+    "Scan for identifier-like fields passes (or the data is quarantined and excluded).",
+    "Provenance JSONL records source -> fetch -> checksum."
+  ],
+  "resources": [
+    "/output/sources/verified-open.jsonl"
+  ],
+  "output": "/output/data/pilot/ (raw acquired data + provenance JSONL + checksums)",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "ewing-atlas-edu-010",
+  "title": "Translate vetted explainer (links to ewing-info-translations)",
+  "project": "ewing-single-cell-atlas",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "patient-education",
+    "translation"
+  ],
+  "riskTier": "high",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Backlog — ONLY post-M5, dual-expert per language. Translate the vetted, expert-signed-off explainer; high risk because it is patient-facing oncology content and each language needs its own dual-expert sign-off. Coordinates with the ewing-info-translations project. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Translate the vetted explainer into a target language (one representative task), with per-language dual-expert review, preserving the 'not medical advice' framing.",
+  "acceptanceCriteria": [
+    "Translation begins ONLY after the M5 explainer is published with oncologist + patient-advocate sign-off.",
+    "Each translated language carries its own dual-expert (oncologist + patient-advocate) sign-off; veto = block.",
+    "Preserves 'not medical advice' framing; no prognosis/treatment/patient-specific guidance; source license respected.",
+    "Languages are NOT pre-enumerated here — they expand on advocacy-partner/scope confirmation (see fan-out note)."
+  ],
+  "resources": [
+    "/output/education/ewing-single-cell-explainer.md",
+    "Elyos project: ewing-info-translations"
+  ],
+  "output": "/output/education/translations/ (per-language; representative task until languages confirmed)",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0 (source-compatible; the vetted explainer is CC-BY-4.0 — never relicense copyrighted source)"
+}

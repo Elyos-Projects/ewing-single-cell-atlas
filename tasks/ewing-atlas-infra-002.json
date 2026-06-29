@@ -1,0 +1,36 @@
+{
+  "id": "ewing-atlas-infra-002",
+  "title": "Define SourceRecord + Datasheet + provenance JSONL schemas",
+  "project": "ewing-single-cell-atlas",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "data-standards",
+    "provenance"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "M0 foundation for ewing-single-cell-atlas. Every later license, provenance and annotation gate depends on machine-checkable schemas. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Define and document the SourceRecord, Datasheet, ProvenanceEvent, and AnnotationAssertion JSON schemas (with validating example instances) that the pipeline and CI gates will enforce.",
+  "acceptanceCriteria": [
+    "SourceRecord, Datasheet, ProvenanceEvent, and AnnotationAssertion schemas defined, with example instances that validate.",
+    "Provenance schema requires a per-assertion source-citation field.",
+    "Schemas referenced by the CI schema-validate job; example instances pass in CI."
+  ],
+  "resources": [
+    "https://github.com/chanzuckerberg/single-cell-curation",
+    "Gebru et al., Datasheets for Datasets"
+  ],
+  "output": "/output/schemas/ (SourceRecord.schema.json, Datasheet.schema.json, ProvenanceEvent.schema.json, AnnotationAssertion.schema.json + validating examples)",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
