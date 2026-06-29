@@ -1,0 +1,36 @@
+{
+  "id": "ewing-atlas-anno-010",
+  "title": "Reconcile conflicting cross-study cell-type labels",
+  "project": "ewing-single-cell-atlas",
+  "type": "research",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "cell-ontology",
+    "annotation"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Backlog — tie-break policy (PLAN §16 Q4). Reconcile conflicting cross-study cell-type labels with a documented tie-break policy. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Define and apply a tie-break policy to reconcile conflicting cross-study cell-type labels, every decision sourced.",
+  "acceptanceCriteria": [
+    "Conflicting labels enumerated with their sources.",
+    "Documented tie-break policy applied; each reconciliation cites its evidence.",
+    "DR sign-off recorded."
+  ],
+  "resources": [
+    "PLAN.md §16 Q4",
+    "Cell Ontology (CL)"
+  ],
+  "output": "/output/annotation/label-reconciliation-policy.md (+ reconciled mappings)",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

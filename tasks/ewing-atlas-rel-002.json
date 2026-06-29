@@ -1,0 +1,36 @@
+{
+  "id": "ewing-atlas-rel-002",
+  "title": "License + attribution audit of full release bundle (0-violation gate)",
+  "project": "ewing-single-cell-atlas",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "compliance",
+    "licensing"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "M4 final compliance gate. Zero license/access violations are required before the release ships. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Conduct the license + attribution audit of the full release bundle, enforcing a 0-violation gate.",
+  "acceptanceCriteria": [
+    "Per-source attribution + license correct; mixed/non-redistributable data is link-only, not re-hosted.",
+    "0 license/access violations (CR audit); release reproducible by an independent runner.",
+    "Audit result recorded with CR sign-off."
+  ],
+  "resources": [
+    "/output/release/",
+    "/output/sources/verified-open.jsonl"
+  ],
+  "output": "/output/release/license-attribution-audit.md (0-violation gate, CR sign-off)",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

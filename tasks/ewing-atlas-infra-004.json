@@ -1,0 +1,36 @@
+{
+  "id": "ewing-atlas-infra-004",
+  "title": "Reproducible env + pipeline skeleton (pinned, deterministic)",
+  "project": "ewing-single-cell-atlas",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "reproducibility"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "M1 pilot. A pinned, deterministic environment and pipeline skeleton so every downstream dataset run is reproducible by an independent runner. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Build a reproducible, pinned environment and a deterministic pipeline skeleton that downstream standardize/annotate/integrate steps plug into.",
+  "acceptanceCriteria": [
+    "Environment is fully pinned (lockfile / container) and runs deterministically.",
+    "Pipeline skeleton has stages for acquire, standardize, annotate, integrate, release with provenance hooks.",
+    "Clean-machine run reproduces outputs; CI exercises the skeleton.",
+    "No secrets or large data binaries committed; commit signed off per DCO."
+  ],
+  "resources": [
+    "/output/schemas/",
+    "https://github.com/chanzuckerberg/single-cell-curation"
+  ],
+  "output": "A pull request adding the pinned environment and deterministic pipeline skeleton.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "ewing-atlas-data-003",
+  "title": "Author datasheet (Gebru-style) for each pilot dataset",
+  "project": "ewing-single-cell-atlas",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "documentation"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "M1 pilot documentation. A Gebru-style datasheet per pilot dataset for transparency and reuse. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Author a Gebru-style datasheet for each pilot dataset, conforming to the Datasheet schema.",
+  "acceptanceCriteria": [
+    "A datasheet exists per pilot dataset and validates against the Datasheet schema.",
+    "Covers motivation, composition, collection, preprocessing, uses, distribution, and licensing.",
+    "Cites the SourceRecord and provenance for each dataset."
+  ],
+  "resources": [
+    "Gebru et al., Datasheets for Datasets",
+    "/output/schemas/Datasheet.schema.json"
+  ],
+  "output": "/output/data/pilot/datasheets/ (one per pilot dataset)",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

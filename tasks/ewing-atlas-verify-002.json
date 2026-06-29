@@ -1,0 +1,38 @@
+{
+  "id": "ewing-atlas-verify-002",
+  "title": "License + access-tier + de-id verification per candidate (hard gate)",
+  "project": "ewing-single-cell-atlas",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "compliance",
+    "licensing"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "M0 Stage-1 license/access-verification gate — the hardest gate (compliance-reviewer veto). Only verified-open sources may flow downstream. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Verify license, access tier, and de-identification per candidate source, splitting the inventory into verified-open vs excluded lists with recorded decisions and CR sign-off.",
+  "acceptanceCriteria": [
+    "Each candidate has a SourceRecord with: license verbatim + tag, access tier, de-id evidence, redistribution-allowed flag, retrieval URL, and a checksum-on-fetch plan.",
+    "Every controlled-access (dbGaP/EGA/TARGET-controlled/biobank) or identifiable source is marked excluded with the reason recorded.",
+    "COSMIC/OncoKB/non-commercial resources flagged and excluded from derivatives.",
+    "Output splits into verified-open vs excluded lists; CR sign-off recorded.",
+    "No accession is marked 'approved' without a passing recorded check."
+  ],
+  "resources": [
+    "/output/sources/candidates.jsonl",
+    "/output/COMPLIANCE.md"
+  ],
+  "output": "/output/sources/verified-open.jsonl + /output/sources/excluded.jsonl (with CR sign-off)",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

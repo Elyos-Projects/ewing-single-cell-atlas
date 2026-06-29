@@ -1,0 +1,36 @@
+{
+  "id": "ewing-atlas-rel-001",
+  "title": "Release bundle: CELLxGENE deploy + download + Zenodo DOI + CHANGELOG",
+  "project": "ewing-single-cell-atlas",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "release",
+    "archival"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "M4 public release v1: browseable, downloadable, DOI-archived atlas under correct open licenses. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Produce the release bundle: CELLxGENE deployment, downloadable artifact, Zenodo DOI archive, and CHANGELOG, linked as the beneficiary-facing home.",
+  "acceptanceCriteria": [
+    "Atlas browseable (CELLxGENE) + downloadable + archived with a Zenodo DOI.",
+    "README links the release as the beneficiary-facing home (Definition of Shipped met).",
+    "Release reproducible by an independent runner; CHANGELOG included."
+  ],
+  "resources": [
+    "/output/atlas/integrated.h5ad",
+    "https://zenodo.org"
+  ],
+  "output": "/output/release/ (CELLxGENE deploy config + download artifact + Zenodo DOI + CHANGELOG)",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

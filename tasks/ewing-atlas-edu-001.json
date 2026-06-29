@@ -1,0 +1,35 @@
+{
+  "id": "ewing-atlas-edu-001",
+  "title": "Draft 'what single-cell research is learning about Ewing' explainer",
+  "project": "ewing-single-cell-atlas",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "patient-education"
+  ],
+  "riskTier": "high",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "M5 CONDITIONAL education layer — does NOT start without an advocacy partner AND credentialed oncologist + patient-advocate reviewers. Patient-facing oncology content is high risk: every statement must be sourced, plain-language, and prominently labeled 'not medical advice', with NO prognosis, treatment, or patient-specific guidance. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Draft a sourced, plain-language explainer of what single-cell research is learning about Ewing sarcoma, prominently labeled 'not medical advice'.",
+  "acceptanceCriteria": [
+    "Every statement sourced; plain language; prominently labeled 'not medical advice'.",
+    "No prognosis, treatment, or patient-specific guidance.",
+    "Drafting does not begin until an advocacy partner and oncologist + patient-advocate reviewers are secured (milestone gate)."
+  ],
+  "resources": [
+    "/output/atlas/integration-report.md",
+    "PLAN.md §M5 (conditional)"
+  ],
+  "output": "/output/education/ewing-single-cell-explainer.md (draft, 'not medical advice')",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

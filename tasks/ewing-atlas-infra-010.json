@@ -1,0 +1,36 @@
+{
+  "id": "ewing-atlas-infra-010",
+  "title": "Funded-lane reanalysis option (metered, budget-capped)",
+  "project": "ewing-single-cell-atlas",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "funded-lane",
+    "infrastructure"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Backlog — only if escrow exists. This task BUILDS the optional metered, budget-capped funded-lane reanalysis path; the task itself is donated infra work (no escrow exists yet). Any future funded reanalysis task must declare fundedBudgetUsd and never exceed its escrow cap. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Add the optional funded-lane reanalysis path (metered, hard budget-capped) so a future escrow-backed reanalysis can run without exceeding its cap.",
+  "acceptanceCriteria": [
+    "Funded-lane reanalysis path is metered and enforces a hard per-task budget cap (never exceeds escrow).",
+    "Future funded reanalysis tasks must declare fundedBudgetUsd; this option is inert until escrow exists.",
+    "No secrets/API keys committed; commit signed off per DCO."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md (funded lane: runner, API key, hard budget cap)",
+    "PLAN.md (funded-lane backlog)"
+  ],
+  "output": "A pull request adding the optional metered, budget-capped funded-lane reanalysis path.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

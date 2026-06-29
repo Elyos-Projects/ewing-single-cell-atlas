@@ -215,6 +215,13 @@ Goal: refresh cadence, maintenance, and outcome tracking.
 | ewing-atlas-ops-010 | Spatial / multi-omic extension scoping | design-spec | medium | medium | v2 candidate |
 | ewing-atlas-infra-010 | Funded-lane reanalysis option (metered, budget-capped) | code | medium | medium | Needs `fundedBudgetUsd`; only if escrow exists |
 
+> **Fan-out note (`ewing-atlas-edu-010`):** target languages are intentionally **not pre-enumerated**.
+> Translation is `type:"writing"` + `deliverable:"translation"` and expands into per-language tasks only
+> on advocacy-partner/scope confirmation, with **dual-expert (oncologist + patient-advocate) sign-off per
+> language**. The JSON is a single representative task until languages are secured (no fabricated languages).
+> **Fan-out note (`ewing-atlas-infra-010`):** kept `lane:"donated"` — it *builds* the optional funded path;
+> no escrow exists for v1, so any *future* funded reanalysis task must declare `fundedBudgetUsd` itself.
+
 ---
 
 ## Example task JSON
@@ -260,6 +267,27 @@ Schema-valid (`packages/schema/src/schemas.ts`) Task JSON for the first M0 task.
 ```
 
 ---
+
+## Generated task index
+
+Every backlog row above is now backed by a schema-valid `tasks/<id>.json` (validated against
+`packages/schema/src/schemas.ts`; all 27 pass). All tasks: `lane: donated`, `status: open`,
+`verifiedNeed: false`, `requestor: TBD`.
+
+- **M0:** `ewing-atlas-infra-001` (seed), `ewing-atlas-infra-002`, `ewing-atlas-infra-003`,
+  `ewing-atlas-verify-001`, `ewing-atlas-verify-002`, `ewing-atlas-part-001`
+- **M1:** `ewing-atlas-infra-004`, `ewing-atlas-data-001`, `ewing-atlas-data-002`, `ewing-atlas-data-003`
+- **M2:** `ewing-atlas-anno-001`, `ewing-atlas-anno-002`, `ewing-atlas-anno-003`
+- **M3:** `ewing-atlas-integ-001`, `ewing-atlas-integ-002`
+- **M4:** `ewing-atlas-rel-001`, `ewing-atlas-rel-002`
+- **M5 (conditional, high-risk):** `ewing-atlas-edu-001`, `ewing-atlas-edu-002`
+- **M6:** `ewing-atlas-ops-001`, `ewing-atlas-ops-002`
+- **Backlog:** `ewing-atlas-data-010`, `ewing-atlas-integ-010`, `ewing-atlas-anno-010`,
+  `ewing-atlas-edu-010`, `ewing-atlas-ops-010`, `ewing-atlas-infra-010`
+
+`outputLicense`: `MIT` for `pr` deliverables (code/CI), `CC-BY-4.0` for documents/datasets, and
+source-compatible for the translation task. M5/edu and `edu-010` carry `riskTier: high` with the
+oncologist + patient-advocate dual sign-off requirement preserved verbatim in their `context`/criteria.
 
 ## Summary counts
 

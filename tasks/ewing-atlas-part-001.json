@@ -1,0 +1,34 @@
+{
+  "id": "ewing-atlas-part-001",
+  "title": "Partner/beneficiary outreach (research lab and/or advocacy org)",
+  "project": "ewing-single-cell-atlas",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "partnerships"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "M0 outreach to move verifiedNeed from false toward a secured beneficiary (research lab and/or advocacy org). Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Draft and log a partner/beneficiary outreach package targeting a research lab and/or advocacy org, recording at least one outreach attempt.",
+  "acceptanceCriteria": [
+    "Outreach package describes the project, the verified-open inventory value, and the specific deliverable being offered.",
+    "At least one partner-outreach attempt is logged with date and target.",
+    "Clarifies that securing a partner is what flips verifiedNeed to true."
+  ],
+  "resources": [
+    "PLAN.md §2 (no partner secured yet)"
+  ],
+  "output": "/output/outreach/partner-outreach.md (+ logged attempts)",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

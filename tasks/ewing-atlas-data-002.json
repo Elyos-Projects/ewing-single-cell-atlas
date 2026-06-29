@@ -1,0 +1,36 @@
+{
+  "id": "ewing-atlas-data-002",
+  "title": "Standardize pilot dataset -> CELLxGENE-schema .h5ad + QC report",
+  "project": "ewing-single-cell-atlas",
+  "type": "data",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "data-standards"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "M1 pilot standardization to CELLxGENE schema with a QC report and complete provenance. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Standardize the pilot dataset into a CELLxGENE-schema .h5ad with a QC report and complete, reproducible provenance.",
+  "acceptanceCriteria": [
+    "Output passes cellxgene-schema validate in CI.",
+    "Gene IDs normalized to HGNC/Ensembl; obs/var fields ontology-mapped (CL/UBERON/MONDO).",
+    "QC report (cells, genes, mito%, doublet handling) included; thresholds documented.",
+    "Provenance JSONL complete (source -> transforms -> output hash); pipeline re-runs reproducibly."
+  ],
+  "resources": [
+    "/output/data/pilot/",
+    "https://github.com/chanzuckerberg/single-cell-curation"
+  ],
+  "output": "/output/data/pilot/standardized.h5ad + QC report + provenance JSONL",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

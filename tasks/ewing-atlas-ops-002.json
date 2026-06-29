@@ -1,0 +1,35 @@
+{
+  "id": "ewing-atlas-ops-002",
+  "title": "Outcome-metrics dashboard + 'covered/missing' public ledger",
+  "project": "ewing-single-cell-atlas",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "metrics",
+    "transparency"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "M6 sustainability. A public dashboard and ledger tracking outcomes and what is covered vs still missing, including license-violation count (target 0). Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Build the outcome-metrics dashboard and the 'covered/missing' public ledger.",
+  "acceptanceCriteria": [
+    "Dashboard tracks PLAN §4 metrics including license-violation count (target 0).",
+    "Public ledger shows what is curated vs what is still missing.",
+    "Commit signed off per DCO."
+  ],
+  "resources": [
+    "PLAN.md §4 (metrics)"
+  ],
+  "output": "A pull request adding the outcome-metrics dashboard and the covered/missing public ledger.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

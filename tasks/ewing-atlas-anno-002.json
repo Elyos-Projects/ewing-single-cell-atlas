@@ -1,0 +1,37 @@
+{
+  "id": "ewing-atlas-anno-002",
+  "title": "Cell-type annotation (Cell Ontology) for pilot datasets",
+  "project": "ewing-single-cell-atlas",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "cell-ontology",
+    "annotation"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "M2 annotation. Ontology-backed cell labels with 100% source citation and DR sign-off. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Annotate pilot datasets with Cell Ontology cell-type labels and cited program scores, every label sourced.",
+  "acceptanceCriteria": [
+    "Every cell/cluster label is a valid CL term; method + confidence recorded.",
+    "100% of labels carry a source citation (paper/marker-set); DR sign-off recorded.",
+    "Program scores reference only license-clean, citable signatures (from anno-001)."
+  ],
+  "resources": [
+    "/output/data/pilot/standardized.h5ad",
+    "/output/signatures/ewsr1-fli1-ets.json",
+    "Cell Ontology (CL)"
+  ],
+  "output": "/output/data/pilot/annotated.h5ad (CL labels + cited program scores)",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

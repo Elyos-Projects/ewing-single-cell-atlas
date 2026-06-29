@@ -1,0 +1,35 @@
+{
+  "id": "ewing-atlas-anno-001",
+  "title": "Assemble citable, license-clean EWSR1-FLI1/ETS gene signatures",
+  "project": "ewing-single-cell-atlas",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "gene-signatures",
+    "licensing"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "M2 annotation inputs. Only citable, license-clean EWSR1-FLI1/ETS signatures may be used for program scoring. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Assemble a citable, license-clean set of EWSR1-FLI1/ETS gene signatures for program scoring, with redistribution checked per source.",
+  "acceptanceCriteria": [
+    "Each signature traced to a citable source; redistribution of the gene list license-checked.",
+    "Non-commercial-sourced lists excluded from CC-BY output.",
+    "Signatures recorded in a machine-readable, citation-bearing format."
+  ],
+  "resources": [
+    "/output/sources/verified-open.jsonl"
+  ],
+  "output": "/output/signatures/ewsr1-fli1-ets.json (citable, license-clean signatures)",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

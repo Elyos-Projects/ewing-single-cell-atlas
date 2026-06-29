@@ -1,0 +1,35 @@
+{
+  "id": "ewing-atlas-ops-010",
+  "title": "Spatial / multi-omic extension scoping",
+  "project": "ewing-single-cell-atlas",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "spatial",
+    "multi-omic"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Backlog — v2 candidate. Scope a spatial / multi-omic extension of the atlas. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Produce a design spec scoping a spatial / multi-omic extension of the Ewing single-cell atlas.",
+  "acceptanceCriteria": [
+    "Candidate spatial/multi-omic data modalities and open-access sources surveyed.",
+    "Schema/pipeline extension points identified with effort and risk notes.",
+    "Open-access-only and provenance guardrails carried into the v2 scope."
+  ],
+  "resources": [
+    "PLAN.md (v2 candidates)"
+  ],
+  "output": "/output/design/spatial-multiomic-extension-scope.md",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

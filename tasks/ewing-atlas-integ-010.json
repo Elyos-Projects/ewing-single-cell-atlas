@@ -1,0 +1,35 @@
+{
+  "id": "ewing-atlas-integ-010",
+  "title": "Evaluate scVI vs harmonypy integration (reproducibility tradeoff)",
+  "project": "ewing-single-cell-atlas",
+  "type": "research",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "oncology",
+    "bioinformatics",
+    "single-cell",
+    "open-data",
+    "integration",
+    "evaluation"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Backlog — open question (PLAN §16 Q2). Compare scVI vs harmonypy integration on the reproducibility tradeoff. Binding cancer guardrails apply: ONLY open-access / aggregate / de-identified public data; controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope; not medical advice; when in doubt, stop and surface. No partner/beneficiary is secured yet, so verifiedNeed is false.",
+  "objective": "Evaluate scVI vs harmonypy for dataset integration, documenting the determinism/reproducibility tradeoff and a recommendation.",
+  "acceptanceCriteria": [
+    "Both methods run on the same inputs with versions and params recorded.",
+    "Reproducibility/determinism tradeoff quantified and documented.",
+    "Recommendation stated with caveats; results reproducible by an independent runner."
+  ],
+  "resources": [
+    "PLAN.md §16 Q2"
+  ],
+  "output": "/output/evaluation/integration-method-comparison.md",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
