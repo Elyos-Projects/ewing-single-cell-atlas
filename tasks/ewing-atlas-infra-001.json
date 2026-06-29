@@ -1,0 +1,34 @@
+{
+  "id": "ewing-atlas-infra-001",
+  "title": "Scaffold ewing-single-cell-atlas repo: README, CONTRIBUTING, licenses, CI skeleton",
+  "project": "ewing-single-cell-atlas",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["oncology", "bioinformatics", "single-cell", "open-data"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "New Elyos cancer-research good-deed project to curate and annotate ONLY open-access / aggregate / de-identified public Ewing sarcoma scRNA-seq data. Controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope. No partner/beneficiary is secured yet, so verifiedNeed is false. This first task creates the repository foundation that every later gate (license verification, provenance, schema validation) hangs off of.",
+  "objective": "Scaffold the repository with README, CONTRIBUTING, dual licensing (MIT for code, CC-BY-4.0 for data/docs), a CODEOWNERS/reviewer-roles stub, and a CI skeleton that will later run cellxgene-schema validation plus license and provenance gates.",
+  "acceptanceCriteria": [
+    "README states scope, the binding cancer guardrails (open-access only; no controlled-access or identifiable data), and 'not medical advice'.",
+    "LICENSE files present: MIT for code, CC-BY-4.0 for data/docs; licensing policy documented.",
+    "CONTRIBUTING.md documents the Stage-1 license/access-verification gate and the 'when in doubt, stop and surface' escalation path.",
+    "CI skeleton runs on PRs and has placeholder jobs for schema-validate, license-gate, and provenance-completeness checks.",
+    "No secrets, tokens, or large data binaries committed; .gitignore excludes raw data.",
+    "Commit signed off per DCO."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/docs/good-deed-definition.md",
+    "C:/code/elyos/planning/ROADMAP.md (Track 8 cancer guardrails)",
+    "https://github.com/chanzuckerberg/single-cell-curation (CELLxGENE schema)"
+  ],
+  "output": "A pull request adding the repository scaffold (README, CONTRIBUTING, LICENSE files, reviewer-roles stub, CI skeleton) for ewing-single-cell-atlas.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}
